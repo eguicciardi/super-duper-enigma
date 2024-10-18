@@ -1,28 +1,11 @@
-# Notes
+# Hi
 
-This are my day to day notes and snippets for commands there's no chance I can remember. Divided by topic.
+This repository contains the stuff I usually use a work and that I find somehow useful.
 
-## Docker
+The *docker* folders contains some containers for **LOCAL USE ONLY** (hence there are *.env* files included with very basic credentials).
 
-### Remove Docker unused data
+The [notes](notes.md) file have some useful commands in it.
 
-```bash
-docker system prune
-```
+## Disclaimer
 
-## NGINX
-
-### Reload config
-
-```bash
-docker exec -it <CONTAINER_NAME> nginx -s reload # On Docker
-nginx -s reload # Non-Docker
-```
-
-## MongoDB
-
-### Import BSON file into a collection
-
-```bash
- mongorestore --host <HOST> --port 27017 --db <DB_NAME> --collection <COLLECTION_NAME> --username <USERNAME> --password <PASSWORD> --authenticationDatabase admin <PATH_TO_BSON_FILE>
-```
+I do not take any responsibility of the use of the code in this repository. Please read any script and make sure you know what it is doing before running it.
