@@ -10,6 +10,14 @@ This are my day to day notes and snippets for commands there's no chance I can r
 docker system prune
 ```
 
+### Build for x86 architecure from MX Mac processors
+
+```bash
+docker buildx build --platform linux/amd64 -t IMAGE_NAME --no-cache .
+```
+
+**Note:** be shure to have buildx docker plugin installed.
+
 ## NGINX
 
 ### Reload config
